@@ -1,0 +1,208 @@
+*,
+*:after,
+*:before {
+    border: 0;
+    outline: 0;
+    line-height: inherit;
+    text-decoration: none;
+    vertical-align: middle;
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: calc(10px + (1vw * 1.778));
+    /* ^ Thanks android!*/
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    line-height: 1.4;
+    width: 100vw;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+blockquote {
+    display: block;
+    margin-bottom: 0.75rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2.66em;
+}
+
+h3 {
+    font-size: 2.33em;
+}
+
+h4 {
+    font-size: 2em;
+}
+
+h5 {
+    font-size: 1.66em;
+}
+
+h6 {
+    font-size: 1.33em;
+}
+
+p,
+li {
+    font-size: 1em;
+}
+
+ul,
+ol {
+    padding: 0;
+    padding-left: 1.5rem;
+}
+
+li {
+    display: list-item;
+}
+
+input {
+    width: 100%;
+    margin: 1rem 0;
+}
+
+li>h1,
+li>h2,
+li>h3,
+li>h4,
+li>h5,
+li>h6 {
+    padding: 0;
+}
+
+em,
+i {
+    font-style: italic;
+}
+
+strong,
+b {
+    font-weight: 700;
+}
+
+code,
+pre {
+    background: #eee;
+    padding: 0 0.25rem;
+    font-family: monospace;
+}
+
+pre {
+    padding: 1rem;
+    margin: 1rem 0;
+    overflow-x: auto;
+    font-size: 0.75rem;
+}
+
+b,
+big,
+i,
+small,
+abbr,
+acronym,
+cite,
+code,
+dfn,
+em,
+kbd,
+strong,
+samp,
+time,
+var,
+p a,
+bdo,
+q,
+span,
+u {
+    vertical-align: top;
+}
+
+article {
+    padding: 0 1rem;
+}
+
+section {
+    padding: 1rem 0;
+}
+
+.error {
+    max-width: 70ch;
+    display: block;
+    margin: 0 auto;
+    text-transform: uppercase;
+    color: #eee;
+    background: #E55;
+    font-family: sans-serif;
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.demo {
+    border: 1px solid #7EF;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+@media only screen and (min-device-width: 400px) and (orientation: landscape) {
+    html {
+        font-size: calc(10px + (1vw * 0.562));
+    }
+    section {
+        display: block;
+        margin: 0 auto;
+        max-width: 43rem;
+    }
+    .row {
+        width: 100%;
+        display: table;
+        table-layout: fixed;
+    }
+    .col {
+        display: table-cell;
+        word-wrap: break-word;
+    }
+}
+
+@media only screen and (min-aspect-ratio: 17/9) and (orientation: landscape) {
+    html {
+        font-size: calc(10px + (1vw * 0.428));
+    }
+}
