@@ -4,9 +4,9 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta charset="utf-8">
-  <title>vjs-date</title>
+  <title>vjsdate</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="vjs-date.css">
+  <link rel="stylesheet" href="vjsdate.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="format-detection" content="telephone=no">
 
@@ -15,7 +15,7 @@
 <body class="row">
   <article>
     <section>
-      <h1>vjs-date</h1>
+      <h1>vjsdate</h1>
       <h4><i>vanilla javascript date</i></h4>
       <h5>aka: why do I need to use jquery and jquery UI for a decent date/time picker?</h5>
     </section>
@@ -49,12 +49,12 @@
       <p><b>Optional:</b> The end date. If not set, will be 2 years after the original date. </p>
 
       <p>To use it, put the below code in your JS somewhere (or make it a mini framework with ketchup, I don't care)</p>
-      <pre><code><?php $vjscode = file_get_contents('vjs-date.js');echo htmlspecialchars($vjscode); ?></code></pre>
-      <p>I have put some basic styling to get you going in the vjs-date.css file. Ideally you would do a better job or expand on the default. It's a bit moderial.</p>
+      <pre><code><?php $vjscode = file_get_contents('vjsdate.js');echo htmlspecialchars($vjscode); ?></code></pre>
+      <p>I have put some basic styling to get you going in the vjsdate.css file. Ideally you would do a better job or expand on the default. It's a bit moderial.</p>
       <p>Hopefully this will get us by until the browsers can get the native one up to scratch.</p>
     </section>
   </article>
-  <script src="vjs-date.js" type="text/javascript"></script>
+  <script src="vjsdate.js" type="text/javascript"></script>
 </body>
 
 </html>
