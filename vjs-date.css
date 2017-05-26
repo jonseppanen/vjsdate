@@ -1,14 +1,14 @@
-.vjsDate-modal input[type="tel"]::-webkit-outer-spin-button,
-.vjsDate-modal input[type="tel"]::-webkit-inner-spin-button {
+.vjsdate-modal input[type="tel"]::-webkit-outer-spin-button,
+.vjsdate-modal input[type="tel"]::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
 
-.vjsDate-modal input[type="tel"] {
+.vjsdate-modal input[type="tel"] {
     -moz-appearance: textfield;
 }
 
-.vjsDate-modal {
+.vjsdate-modal {
     width: 100vw;
     height: 100vh;
     position: fixed;
@@ -34,13 +34,13 @@
 
 
 
-.vjsDate-modal * {
+.vjsdate-modal * {
     box-sizing: border-box;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     -webkit-touch-callout: none;
 }
 
-.vjsDate-modal select {
+.vjsdate-modal select {
     margin: 0;
     border: 0;
     border-radius: 0;
@@ -54,20 +54,20 @@
     vertical-align: top;
 }
 
-.vjsDate-modal select:disabled {
+.vjsdate-modal select:disabled {
     font-weight: lighter;
     color: #DDD;
 }
 
-.vjsDate-modal.active {
+.vjsdate-modal.active {
     animation: animGrow 0.3s forwards;
 }
 
-.vjsDate-modal.inactive {
+.vjsdate-modal.inactive {
     animation: animShrink 0.3s forwards;
 }
 
-.vjsDate-frame {
+.vjsdate-frame {
     margin: 0 auto;
     width: 100%;
     max-width: 87.5vh;
@@ -76,7 +76,7 @@
     text-align: center;
 }
 
-.vjsDate-btnClose {
+.vjsdate-btnClose {
     width: auto;
     display: block;
     height: 3rem;
@@ -93,11 +93,11 @@
     background-size: 1rem;
 }
 
-.vjsDate-tabs {
+.vjsdate-tabs {
     text-align: right;
 }
 
-.vjsDate-tabs>div {
+.vjsdate-tabs>div {
     height: 3rem;
     display: inline-block;
     line-height: 3rem;
@@ -107,7 +107,7 @@
     cursor: pointer;
 }
 
-.vjsDate-controlMonth:after,.vjsDate-controlYear:after{
+.vjsdate-controlMonth:after,.vjsdate-controlYear:after{
     display: block;
     position: absolute;
     bottom:-0px;
@@ -118,15 +118,15 @@
     content:'';
 }
 
-.vjsDate-controlYear {
+.vjsdate-controlYear {
     width: 36%;
 }
 
-.vjsDate-controlMonth {
+.vjsdate-controlMonth {
     width: 34%;
 }
 
-.vjsDate-tabs .vjsDate-toggleTimeCal {
+.vjsdate-tabs .vjsdate-toggleTimeCal {
     width: 30%;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm1 12v-6h-2v8h7v-2h-5z'/%3E%3C/svg%3E");
     background-position: center left 0.33rem;
@@ -139,13 +139,13 @@
 }
 
 
-.vjsDate-tabs .vjsDate-toggleTimeCal.calActive {
+.vjsdate-tabs .vjsdate-toggleTimeCal.calActive {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M20 20h-4v-4h4v4zm-6-10h-4v4h4v-4zm6 0h-4v4h4v-4zm-12 6h-4v4h4v-4zm6 0h-4v4h4v-4zm-6-6h-4v4h4v-4zm16-8v22h-24v-22h3v1c0 1.103.897 2 2 2s2-.897 2-2v-1h10v1c0 1.103.897 2 2 2s2-.897 2-2v-1h3zm-2 6h-20v14h20v-14zm-2-7c0-.552-.447-1-1-1s-1 .448-1 1v2c0 .552.447 1 1 1s1-.448 1-1v-2zm-14 2c0 .552-.447 1-1 1s-1-.448-1-1v-2c0-.552.447-1 1-1s1 .448 1 1v2z'/%3E%3C/svg%3E");
     border-left: 0px solid transparent;
     border-right: 5px solid #f60;
 }
 
-.vjsDate-tabs .vjsDate-toggleTimeCal sup {
+.vjsdate-tabs .vjsdate-toggleTimeCal sup {
     vertical-align: top;
     font-size: 0.75rem;
     vertical-align: top;
@@ -156,40 +156,40 @@
     padding-left: 1px;
 }
 
-.vjsDate-controlYear>div,
-.vjsDate-controlMonth>div {
+.vjsdate-controlYear>div,
+.vjsdate-controlMonth>div {
     vertical-align: top;
     display: inline-block;
     text-align: center;
     height: 3rem;
 }
 
-.vjsDate-btnYearEdit {
+.vjsdate-btnYearEdit {
     width: 60%;
 }
 
-.vjsDate-btnMonthPrev,
-.vjsDate-btnMonthNext,
-.vjsDate-btnYearPrev,
-.vjsDate-btnYearNext {
+.vjsdate-btnMonthPrev,
+.vjsdate-btnMonthNext,
+.vjsdate-btnYearPrev,
+.vjsdate-btnYearNext {
     width: 1.5rem;
     background-position: center;
     background-repeat: no-repeat;
     background-size: 1.5ch;
 }
 
-.vjsDate-btnYearPrev,
-.vjsDate-btnMonthPrev {
+.vjsdate-btnYearPrev,
+.vjsdate-btnMonthPrev {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z'/%3E%3C/svg%3E");
 }
 
-.vjsDate-btnYearNext,
-.vjsDate-btnMonthNext {
+.vjsdate-btnYearNext,
+.vjsdate-btnMonthNext {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z'/%3E%3C/svg%3E");
 }
 
-.vjsDate-listMonth,
-.vjsDate-listYear {
+.vjsdate-listMonth,
+.vjsdate-listYear {
     padding: 0 0 0 2.5ch;
     height: 3rem;
     line-height: 3rem;
@@ -199,7 +199,7 @@
     display: inline-block;
 }
 
-.vjsDate-panelMain {
+.vjsdate-panelMain {
     height: 100%;
     transition: all 0.2s ease-in-out;
     white-space: nowrap;
@@ -208,7 +208,7 @@
     transform: translate3d(0, 0, 0);
 }
 
-.vjsDate-panelMain>div {
+.vjsdate-panelMain>div {
     width: 100%;
     height: 100%;
     overflow-y: hidden;
@@ -219,8 +219,8 @@
     transition: all 0.2s ease-in-out;
 }
 
-.vjsDate-panelTime select,
-.vjsDate-panelTime .vjsDate-spacerTime {
+.vjsdate-panelTime select,
+.vjsdate-panelTime .vjsdate-spacerTime {
     display: inline-block;
     margin: 3rem 0;
     text-align: center;
@@ -232,22 +232,22 @@
     height: 6rem;
 }
 
-.vjsDate-panelTime select {
+.vjsdate-panelTime select {
     background: none;
     vertical-align: middle;
     border-bottom: 2px solid #f60;
     text-align-last: center;
 }
 
-.vjsDate-panelTime select option {
+.vjsdate-panelTime select option {
     font-size: 1rem;
 }
 
-.vjsDate-inputAMPM {
+.vjsdate-inputAMPM {
     display: none;
 }
 
-.vjsDate-wrapperAMPM {
+.vjsdate-wrapperAMPM {
     background: #444;
     color: #FFF;
     border-radius: 1.5rem;
@@ -260,7 +260,7 @@
     padding: 1px;
 }
 
-.vjsDate-switchAMPM {
+.vjsdate-switchAMPM {
     width: 50%;
     height: 100%;
     border-radius: 100%;
@@ -272,8 +272,8 @@
     transition: all 0.2s ease-in-out;
 }
 
-.vjsDate-switchAMPM:before,
-.vjsDate-switchAMPM:after {
+.vjsdate-switchAMPM:before,
+.vjsdate-switchAMPM:after {
     position: absolute;
     display: block;
     width: 3rem;
@@ -284,33 +284,33 @@
     text-align: center;
 }
 
-.vjsDate-switchAMPM:before {
+.vjsdate-switchAMPM:before {
     content: 'PM';
     left: -2.75rem;
 }
 
-.vjsDate-switchAMPM:after {
+.vjsdate-switchAMPM:after {
     content: 'AM';
     right: -2.75rem;
 }
 
-.vjsDate-panelTime input:checked+.vjsDate-switchAMPM {
+.vjsdate-panelTime input:checked+.vjsdate-switchAMPM {
     transform: translate3d(100%, 0, 0);
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23608'%3E%3Cpath d='M12 10.999c1.437.438 2.562 1.564 2.999 3.001.44-1.437 1.565-2.562 3.001-3-1.436-.439-2.561-1.563-3.001-3-.437 1.436-1.562 2.561-2.999 2.999zm8.001.001c.958.293 1.707 1.042 2 2.001.291-.959 1.042-1.709 1.999-2.001-.957-.292-1.707-1.042-2-2-.293.958-1.042 1.708-1.999 2zm-1-9c-.437 1.437-1.563 2.562-2.998 3.001 1.438.44 2.561 1.564 3.001 3.002.437-1.438 1.563-2.563 2.996-3.002-1.433-.437-2.559-1.564-2.999-3.001zm-7.001 22c-6.617 0-12-5.383-12-12s5.383-12 12-12c1.894 0 3.63.497 5.37 1.179-2.948.504-9.37 3.266-9.37 10.821 0 7.454 5.917 10.208 9.37 10.821-1.5.846-3.476 1.179-5.37 1.179z'/%3E%3C/svg%3E");
 }
 
-.vjsDate-inputAMPM:disabled+.vjsDate-switchAMPM {
+.vjsdate-inputAMPM:disabled+.vjsdate-switchAMPM {
     opacity: 0.1;
 }
 
-.vjsDate-calendar {
+.vjsdate-calendar {
     display: block;
     margin: 0;
     width: 100%;
     text-align: left;
 }
 
-.vjsDate-namedDays span {
+.vjsdate-namedDays span {
     width: 12.5vh;
     max-width: 14.28571428571429vw;
     height: 3rem;
@@ -325,7 +325,7 @@
     font-weight: lighter;
 }
 
-[class^="vjsDate-day"]  {
+[class^="vjsdate-day"]  {
     display: inline-block;
     font-size: 1.5rem;
     padding: 0;
@@ -343,30 +343,30 @@
     background-clip: padding-box;
 }
 
-[class^="vjsDate-day"]:after {
+[class^="vjsdate-day"]:after {
     content: '';
     display: inline-block;
     min-height: 105%;
 }
 
-[class^="vjsDate-day"]:hover {
+[class^="vjsdate-day"]:hover {
     box-shadow: inset 0 0 0 3px #EEEEEF,inset 0 0 0 6px #0DF;
 }
 
-.vjsDate-day-disabled {
+.vjsdate-day-disabled {
     pointer-events: none;
     font-weight: lighter;
     color: #888;
 }
 
-.vjsDate-day-selected{
+.vjsdate-day-selected{
     color: #FFF;
     background: #09F;
     
     background-clip: padding-box;
 }
 
-[class^="vjsDate-day"]:empty {
+[class^="vjsdate-day"]:empty {
     pointer-events: none;
     background:none;
 }

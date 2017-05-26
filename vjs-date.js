@@ -1,78 +1,78 @@
-function vjsDate(pickerElement) {
+function vjsdate(pickerElement) {
 
     /* Build Modal elements and classnames. */
 
     var modal = document.createElement('DIV');
-    modal.classList.add('vjsDate-modal');
+    modal.classList.add('vjsdate-modal');
 
     var frame = document.createElement('DIV');
-    frame.classList.add('vjsDate-frame');
+    frame.classList.add('vjsdate-frame');
 
     var btnClose = document.createElement('DIV');
-    btnClose.classList.add('vjsDate-btnClose');
+    btnClose.classList.add('vjsdate-btnClose');
 
     var tabs = document.createElement('DIV');
-    tabs.classList.add('vjsDate-tabs');
+    tabs.classList.add('vjsdate-tabs');
 
     var controlYear = document.createElement('DIV');
-    controlYear.classList.add('vjsDate-controlYear');
+    controlYear.classList.add('vjsdate-controlYear');
 
     var btnYearPrev = document.createElement('DIV');
-    btnYearPrev.classList.add('vjsDate-btnYearPrev');
+    btnYearPrev.classList.add('vjsdate-btnYearPrev');
 
     var listYear = document.createElement('SELECT');
-    listYear.classList.add('vjsDate-listYear');
+    listYear.classList.add('vjsdate-listYear');
 
     var btnYearNext = document.createElement('DIV');
-    btnYearNext.classList.add('vjsDate-btnYearNext');
+    btnYearNext.classList.add('vjsdate-btnYearNext');
 
     var controlMonth = document.createElement('DIV');
-    controlMonth.classList.add('vjsDate-controlMonth');
+    controlMonth.classList.add('vjsdate-controlMonth');
 
     var btnMonthPrev = document.createElement('DIV');
-    btnMonthPrev.classList.add('vjsDate-btnMonthPrev');
+    btnMonthPrev.classList.add('vjsdate-btnMonthPrev');
 
     var listMonth = document.createElement('SELECT');
-    listMonth.classList.add('vjsDate-listMonth');
+    listMonth.classList.add('vjsdate-listMonth');
 
     var btnMonthNext = document.createElement('DIV');
-    btnMonthNext.classList.add('vjsDate-btnMonthNext');
+    btnMonthNext.classList.add('vjsdate-btnMonthNext');
 
     var toggleTimeCal = document.createElement('DIV');
-    toggleTimeCal.classList.add('vjsDate-toggleTimeCal');
+    toggleTimeCal.classList.add('vjsdate-toggleTimeCal');
 
     var panelMain = document.createElement('DIV');
-    panelMain.classList.add('vjsDate-panelMain');
+    panelMain.classList.add('vjsdate-panelMain');
 
     var panelMonth = document.createElement('DIV');
-    panelMonth.classList.add('vjsDate-panelMonth');
+    panelMonth.classList.add('vjsdate-panelMonth');
 
     var namedDays = document.createElement('DIV');
-    namedDays.classList.add('vjsDate-namedDays');
+    namedDays.classList.add('vjsdate-namedDays');
 
     var calendar = document.createElement('DIV');
-    calendar.classList.add('vjsDate-calendar');
+    calendar.classList.add('vjsdate-calendar');
 
     var panelTime = document.createElement('DIV');
-    panelTime.classList.add('vjsDate-panelTime');
+    panelTime.classList.add('vjsdate-panelTime');
 
     var listHour = document.createElement('SELECT');
-    listHour.classList.add('vjsDate-listHour');
+    listHour.classList.add('vjsdate-listHour');
 
     var spacerTime = document.createElement('DIV');
-    spacerTime.classList.add('vjsDate-spacerTime');
+    spacerTime.classList.add('vjsdate-spacerTime');
 
     var listMinute = document.createElement('SELECT');
-    listMinute.classList.add('vjsDate-listMinute');
+    listMinute.classList.add('vjsdate-listMinute');
 
     var wrapperAMPM = document.createElement('label');
-    wrapperAMPM.classList.add('vjsDate-wrapperAMPM');
+    wrapperAMPM.classList.add('vjsdate-wrapperAMPM');
 
     var inputAMPM = document.createElement('input');
-    inputAMPM.classList.add('vjsDate-inputAMPM');
+    inputAMPM.classList.add('vjsdate-inputAMPM');
 
     var switchAMPM = document.createElement('div');
-    switchAMPM.classList.add('vjsDate-switchAMPM');
+    switchAMPM.classList.add('vjsdate-switchAMPM');
 
     /*Put the children in the parents. Oh dear.*/
     modal.appendChild(frame);
@@ -232,17 +232,17 @@ function vjsDate(pickerElement) {
 
         while (dateCounter.getMonth() === month) {
             var dayObject = document.createElement('SPAN');
-            dayObject.classList.add('vjsDate-day' + dateCounter.getDate());
-            if (dateCounter < startDate || dateCounter > endDate) dayObject.classList.add('vjsDate-day-disabled');
+            dayObject.classList.add('vjsdate-day' + dateCounter.getDate());
+            if (dateCounter < startDate || dateCounter > endDate) dayObject.classList.add('vjsdate-day-disabled');
             dayObject.innerHTML = dateCounter.getDate();
             calendar.appendChild(dayObject);
-            if (new Date(pickerElement.value).getDate() === dateCounter.getDate()) dayObject.classList.add('vjsDate-day-selected');
+            if (new Date(pickerElement.value).getDate() === dateCounter.getDate()) dayObject.classList.add('vjsdate-day-selected');
 
             if (parseInt(dayObject.innerHTML) == 1) {
                 /*If we are the first date, we need to make N spacers for Nth day of the week*/
                 for (i = 0; i < dateCounter.getDay(); i++) {
                     var daySpacer = document.createElement('SPAN');
-                    daySpacer.classList.add('vjsDate-day');
+                    daySpacer.classList.add('vjsdate-day');
                     dayObject.parentElement.insertBefore(daySpacer, dayObject);
                 }
             }
@@ -344,8 +344,8 @@ function vjsDate(pickerElement) {
             var newDate = new Date(getRootDate());
             newDate.setDate(event.target.textContent);
             setRootDate(newDate);
-            calendar.getElementsByClassName('vjsDate-day-selected')[0].classList.remove('vjsDate-day-selected');
-            calendar.getElementsByClassName('vjsDate-day' + newDate.getDate())[0].classList.add('vjsDate-day-selected');
+            calendar.getElementsByClassName('vjsdate-day-selected')[0].classList.remove('vjsdate-day-selected');
+            calendar.getElementsByClassName('vjsdate-day' + newDate.getDate())[0].classList.add('vjsdate-day-selected');
         }
         listHour.dispatchEvent(new Event('change'));
     }
@@ -366,16 +366,16 @@ function vjsDate(pickerElement) {
     }
 
     function getStartDate(){
-        if(pickerElement.getAttribute('data-vjsDateStart')) return new Date(pickerElement.getAttribute('data-vjsDateStart'));
-        pickerElement.setAttribute('data-vjsDateStart', new Date(defaultDate));
+        if(pickerElement.getAttribute('data-vjsdateStart')) return new Date(pickerElement.getAttribute('data-vjsdateStart'));
+        pickerElement.setAttribute('data-vjsdateStart', new Date(defaultDate));
         return defaultDate();
     }
 
     function getEndDate(){
-        if(pickerElement.getAttribute('data-vjsDateEnd')) return new Date(pickerElement.getAttribute('data-vjsDateEnd'));
+        if(pickerElement.getAttribute('data-vjsdateEnd')) return new Date(pickerElement.getAttribute('data-vjsdateEnd'));
         var endDate = new Date(defaultDate);
         endDate.setFullYear(endDate.getFullYear + 2);
-        pickerElement.setAttribute('data-vjsDateEnd', endDate);
+        pickerElement.setAttribute('data-vjsdateEnd', endDate);
         return endDate;
     }
 
@@ -424,10 +424,10 @@ function vjsDate(pickerElement) {
 }
 
 /* Assigns main function and formats date/time*/
-function createVjsDateObject(vjsInput) {
+function createVjsdateObject(vjsInput) {
     /* Config for the format of the date. Has to be in english (already set) for javascript to read it back. */
     var dateFormat;
-    if (vjsInput.getAttribute('data-vjsDateFormat') !== "") { dateFormat = JSON.parse(vjsInput.getAttribute('data-vjsDateFormat')) } else {
+    if (vjsInput.getAttribute('data-vjsdateFormat') !== "") { dateFormat = JSON.parse(vjsInput.getAttribute('data-vjsdateFormat')) } else {
         dateFormat = {
             "weekday": "long",
             "year": "numeric",
@@ -440,7 +440,7 @@ function createVjsDateObject(vjsInput) {
     vjsInput.value = new Date(vjsInput.value).toLocaleDateString("en-US", dateFormat);
     vjsInput.dateFormat = dateFormat;
     vjsInput.addEventListener("focus", function () {
-        vjsDate(this);
+        vjsdate(this);
         this.blur();
     });
 }
@@ -448,8 +448,8 @@ function createVjsDateObject(vjsInput) {
 (function () {
 
     /*Self executor to tag all your date/time inputs. Feel free to do it manually where required*/
-    var inputs = document.querySelectorAll('[data-vjsDate]');
+    var inputs = document.querySelectorAll('[data-vjsdate]');
     for (var i = 0; i < inputs.length; i++) {
-        createVjsDateObject(inputs[i]);
+        createVjsdateObject(inputs[i]);
     }
 })();
